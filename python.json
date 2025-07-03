@@ -1,0 +1,12 @@
+{
+	"Multiple test cases": {
+	"prefix": "!in",
+	"body": [
+		"from sys import stdin",
+		"\nt = int(stdin.readline())",
+		"\nfor _ in range(t):",
+		"    $1 = map($2, stdin.readline()${3:.split()})"
+	],
+	"description": "Multiple test cases"
+	}
+}
