@@ -15,7 +15,7 @@ class Solution:
 
         for _ in enumerate(list(s)):
             try:
-                print(list(s)[_[0]], nums[_[1]])
+                #debug: print(list(s)[_[0]], nums[_[1]])
                 if nums[_[1]] < nums[list(s)[_[0] + 1]]:
                     subpairs.append([_[0], _[0] + 1])
             except IndexError:
@@ -37,3 +37,6 @@ class Solution:
             ans += nums[list(s)[_[1]]] - nums[list(s)[_[0]]]
 
         return ans
+    
+while True:
+    print(Solution().romanToInt(input()))
